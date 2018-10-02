@@ -6,7 +6,12 @@ This project is designed to help you learn the basics of testing in Jasmine. (By
 
 Automating your testing is an integral part of any application and it will help your development cycles to be less stressfull. So it is all for peace of mind. 
 
-#Dependencies
+# How to use
+
+Once you clone the repository, double click on index.html to execute the tests. At the bottom of the page you will see all the results.  
+Check file /jasmine/spec/feedreader.js for the code on the tests.
+
+# Dependencies
 
 Using [Jasmine](https://jasmine.github.io/)  
 Using [JQuery](https://jquery.com/)  
