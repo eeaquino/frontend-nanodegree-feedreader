@@ -79,14 +79,10 @@ $(function()
              */
             it('click event triggers menu visibility',
                 function() {
-                    var slideMenu = document.querySelector(".slide-menu");
-                    var duration = slideMenu.style.transitionDuration;
-                    slideMenu.style.transitionDuration = "0s";
                     $(".menu-icon-link").trigger("click");
-                    expect(document.querySelector(".slide-menu").getBoundingClientRect().left).toBe(0);
+                    expect($("body").hasClass("menu-hidden")).toBe(false);
                     $(".menu-icon-link").trigger("click");
-                    expect(document.querySelector(".slide-menu").getBoundingClientRect().left).toBeLessThan(0);
-                    slideMenu.style.transitionDuration = duration;
+                    expect($("body").hasClass("menu-hidden")).toBe(true);
                 });
 
         });
